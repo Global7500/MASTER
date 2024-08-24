@@ -1,0 +1,105 @@
+/* Orqa fon tasvirini sozlash */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('7.jpg'); /* Tasvirning manzili */
+    background-size: cover; /* Tasvirning to‘liq ekranni qamrab olishini ta'minlaydi */
+    background-position: center; /* Tasvirni markazda joylashtirish */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: rgba(250, 248, 248, 0.671); /* Oq rang, yarim shaffof */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(13, 36, 139, 0.1);
+}
+
+/* Fonda suyuqlik effektini qo‘shish */
+.transparent-background {
+    background: rgba(235, 227, 227, 0.4); /* Oq rang, 40% shaffoflik */
+    backdrop-filter: blur(10px); /* Fonni bulanadigan effekt qo‘shadi */
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav button {
+    padding: 10px 20px; /* Tugma o'lchamini kichikroq qilish */
+    margin: 0 8px;
+    background-color: #007bff;
+    border: none;
+    color: rgba(238, 226, 226, 0.705);
+    font-size: 16px; /* Font o'lchamini kichikroq qilish */
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1 4px px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Tugmani biroz kattaroq qilish hoverda */
+}
+
+nav button:active {
+    transform: scale(0.95); /* Tugmani biroz kichikroq qilish bosilganda */
+}
+
+main {
+    margin-top: 20px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+#lesson-content, #quiz-container, #progress-content {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="password"] {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #9ae3ec;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px; /* Tugma o'lchamini kichikroq qilish */
+    background-color: #1d0aca;
+    border: none;
+    color: rgb(245, 247, 248);
+    font-size: 20px; /* Font o'lchamini kichikroq qilish */
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1d0aca;
+    transform: scale(1.05); /* Tugmani biroz kattaroq qilish hoverda */
+}
+
+button:active {
+    transform: scale(0.95); /* Tugmani biroz kichikroq qilish bosilganda */
+}
+
+#quiz-result, #progress-content, #login-result {
+    text-align: center;
+    font-size: 18px;
+    color: #1d0aca;
+}
+

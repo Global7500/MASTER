@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ms.MASTER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ms.SAYGUL MASTER</h1>
+            <nav>
+                <button onclick="showSection('lessons')">Kurslar</button>
+                <button onclick="showSection('quiz')">Testlar</button>
+                <button onclick="showSection('progress')">Progress</button>
+                <button onclick="showSection('login')">Kirish</button>
+                <button onclick="logout()" id="logout-button" style="display:none;">Chiqish</button>
+            </nav>
+        </header>
+        <main>
+            <div id="lessons" class="section">
+                <h2>Kurslar</h2>
+                <div id="lesson-content">
+                </div>
+<!-- PDF faylni ko'rsatish uchun bo'sh konteyner -->
+<a href="k.pdf" target="k.pdf">PDF ni ko'rish</a>
+<br>
+<br>
+<button id="7.DOCX">DOCX faylni yuklab olish</button>
+<br>
+<a href="7.DOCX" target="7.DOCX">PDF ni ko'rish</a>
+<br>
+<br>
+<!-- DOCX faylni yuklab olish uchun tugma -->
+<button id="7.DOCX">DOCX faylni yuklab olish</button>
+
+            </div>
+            <div id="quiz" class="section" style="display: none;">
+                <h2>Testlar</h2>
+                <div id="quiz-container">
+                    <!-- Savollar va javoblar JavaScript tomonidan qo'shiladi -->
+                </div>
+                <button onclick="checkAnswers()">Tekshirish</button>
+                <div id="quiz-result"></div>
+            </div>
+            <div id="progress" class="section" style="display: none;">
+                <h2>Progress</h2>
+                <div id="progress-content">
+                    <!-- Progress JavaScript tomonidan qo'shiladi -->
+                </div>
+            </div>
+            <div id="login" class="section" style="display: none;">
+                <h2>Kirish</h2>
+                <form id="login-form">
+                    <label for="username">Foydalanuvchi nomi:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Parol:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" onclick="login()">Kirish</button>
+                </form>
+                <div id="login-result"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
